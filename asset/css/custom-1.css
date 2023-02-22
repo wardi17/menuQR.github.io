@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    --title-font: "Red Hat Display", Helvetica, Arial, sans-serif;
+}
+
+h5.s1{
+    font-size: 84px;
+    font-family: var(--title-font);
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.0) !important;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(0,0,0,.3);
+    margin-bottom: 10px;
+}
+
+.text-light h5.s1{
+     -webkit-text-stroke-color: rgba(255,255,255,.75);
+}
+
+@media only screen and (max-width: 767px) {
+    h5.s1{
+        font-size: 60px;
+    }
+
+    .carousel-item h1.s1, 
+    .de-title-2 h1.s1,
+    .carousel-item h3.s1{
+        font-size: 40px;
+        letter-spacing: 0;
+    }
+}
